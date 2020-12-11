@@ -1,5 +1,5 @@
 import { Component } from "solid-js";
-import { Show, For } from "solid-js/dom"
+import { Show, For } from "solid-js/web"
 import { Store } from "./store"
 
 // This component is shown instead of the list of values when the list is empty.

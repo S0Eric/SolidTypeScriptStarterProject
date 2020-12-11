@@ -1,4 +1,4 @@
-import { render } from "solid-js/dom"
+import { render } from "solid-js/web"
 import { Store } from "./store"
 import { App } from "./App"
 

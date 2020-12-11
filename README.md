@@ -25,11 +25,7 @@ To launch Webpack's development server (has hot loading):
 npm run start
 ```
 
-To launch Webpack's development server (has hot loading) and open the web application in your default browser:
-
-```
-npm run open
-```
+Then open [this](http://localhost:8080/public/) in your browser.
 
 To compile the TypeScript source into public/ts-bundle.js (mode=development):
 
