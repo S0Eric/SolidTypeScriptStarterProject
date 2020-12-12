@@ -1,5 +1,8 @@
 # SolidTypeScriptStarterProject
+
 A starter project for the Solid JavaScript library with TypeScript source.
+
+Webpack is the main driver of the build process and is very configurable. It's main purpose is to start with one or more top level TypeScript source files, determine the dependency tree, and bundle everything into a single minified JavaScript file. Typescript and babel are configured as plugins to webpack. Solid requires specific JSX processing and this is done by configuring the TypeScript compiler to pass the JSX through unchanged, and then Solid's babel plugin translates the JSX syntax into Solid specific JavaScript code that renders the DOM nodes.
 
 ### Requirement:
 - Node
