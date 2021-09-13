@@ -30,6 +30,11 @@ npm run dev
 
 Then [open app in your browser.](http://localhost:8080)
 
+To launch Webpack's development server (has hot loading), and open the app in your default browser:
+
+```
+npm run dev-open
+```
 To compile the TypeScript source into public/ts-bundle.js (mode=development):
 
 ```
@@ -48,3 +53,12 @@ To watch the source folder and execute the build-dev script whenever a change is
 npm run watch
 ```
 
+### Update History:
+
+    2021-09-13: Update dependent packages to latest versions. Used npm-check-update (https://futurestud.io/tutorials/npm-update-all-node-js-dependencies-to-their-latest-version) to do it with one command.
+
+    Solid version 1.0.0 renamed createState to createStore and related types were moved from "solid-js" to "solid-js/store". My class that wrapped the "state" object was called "Store", so it had to be renamed to "MainStore", so it didn't conflict.
+
+    WebPack at some point removed the devServer.contentBase and devServer.overlay options. Replaced contentBase with static.directory.
+
+    Added the dev-open script entry.

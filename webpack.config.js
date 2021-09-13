@@ -34,8 +34,9 @@ module.exports = (env, argv) => {
         config.optimization.minimize = false;
         config.devtool = 'inline-source-map';
         config.devServer = {
-          overlay: true,
-          contentBase: path.join(__dirname, 'public')
+          static: {
+            directory: path.join(__dirname, 'public')
+          }
         };
         config.output.filename = 'ts-bundle.js'
     }

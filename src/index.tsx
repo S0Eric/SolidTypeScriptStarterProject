@@ -1,9 +1,9 @@
 import { render } from "solid-js/web"
-import { Store } from "./store"
+import { MainStore } from "./mainStore"
 import { App } from "./App"
 
 // Create an instance of the Store.
-const store = new Store();
+const store = new MainStore();
 
 // Define a function that increments the state's count, and randomly
 // adds or removes an element from the state's values list.

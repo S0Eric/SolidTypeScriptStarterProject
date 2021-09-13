@@ -1,6 +1,6 @@
 import { Component } from "solid-js";
 import { Show, For } from "solid-js/web"
-import { Store } from "./store"
+import { MainStore } from "./mainStore"
 
 // This component is shown instead of the list of values when the list is empty.
 const FallBackNoValues: Component = () => <><p /><div style="color: purple">No Values</div></>
@@ -13,7 +13,7 @@ const Value: Component<ValuePropsType> = ({ value }) => {
   return <div>{value}</div>;
 };
 
-type AppPropsType = { store: Store; }
+type AppPropsType = { store: MainStore; }
 
 // This component displays the current state's count value, with a background color that
 // depends if it is even or odd. It also displays the state's values list.
